@@ -1,0 +1,24 @@
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+*.xcuserstate
+*.log
+[Tt]humbs.db
+
+node_modules
+bower
+bower_components
+
+# Generated JavaScript
+js/vendor
+js/vendor.all.js
+js/all.js
+
+
+# Generated CSS
+css
+
+# Generated non-production build directories
+development

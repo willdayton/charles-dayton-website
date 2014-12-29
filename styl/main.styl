@@ -1,0 +1,172 @@
+@import "nib"
+
+global-reset()
+
+@require "_mixins.styl"
+@require "_animations.styl"
+@require "_images.styl"
+@require "_base.styl"
+@require "_typography.styl"
+@require "_nav.styl"
+
+section {
+    margin-top 6rem
+    fontSize(1.5)
+    text-align left
+    
+    .section-scroll-target {
+        position relative
+        top -85px
+        top -8.5rem
+        visibility hidden
+    }
+    
+    .section-title {
+        text-transform uppercase
+        font-size 1.8rem
+        letter-spacing .2rem
+        font-weight 600
+    }
+    
+    p {
+        margin-bottom 1.0rem
+    }
+    
+    &.welcome {
+        
+        .left {
+            
+            h2,
+            h5 {
+                text-align center
+            }
+            
+            .charles-dayton-image {
+                width 175px
+                height 175px
+                margin 30px auto
+                margin 3.0rem auto
+                border 3px solid #999
+                background-image url(../img/charles-dayton.png);
+                background-size cover
+                background-repeat no-repeat
+                background-position bottom center
+            }
+        }
+
+        .right {
+            display none
+            margin-top 60px
+            margin-top 6.0rem
+            position relative
+            text-align center
+            
+            .amazon-image {
+                display block
+                width 150px
+                height 55px
+                margin 0 auto 15px
+                margin 0 auto 1.5rem
+                background-image url(../img/available-on-amazon.png);
+                background-size contain
+                background-repeat no-repeat
+                background-position bottom center
+                cursor pointer
+            }
+                        
+            .welcome-image {
+                width 100%
+                min-height 370px
+                background-image url(../img/welcome-image.png);
+                background-size contain
+                background-repeat no-repeat
+                background-position bottom center
+            }
+        }
+    }
+    
+    &.works {
+        .work {
+            margin-bottom 20px
+            margin-bottom 2.0rem
+        }
+    }
+
+    &.qa {
+        .question {
+            font-weight 600
+            margin-bottom 1.0rem
+        }
+        .answer {
+            margin-bottom 3rem
+        }
+    }
+}
+
+.mysteries {
+    margin-bottom 20px
+    margin-bottom 2rem
+}    
+
+.book-image {
+    
+    width 100%
+    height 300px
+    margin-bottom 20px
+    margin-bottom 2.0rem
+    background-repeat no-repeat
+    background-size contain
+    background-position top center
+    
+    &.come-hell-or-high-water {
+        background-image url(../img/come-hell-or-high-water.png);
+    }
+    &.hell-hath-no-fury {
+        background-image url(../img/hell-hath-no-fury.png);
+    }
+    &.hell-to-pay {
+        background-image url(../img/hell-to-pay.png);
+    }
+    &.time-passages {
+        background-image url(../img/time-passages.png);
+    }
+}
+
+@media (min-width: 768px) {
+    section {
+        margin-top: 1.8rem;
+        
+        &.welcome {
+            .right {
+                display block
+            }
+        }
+    }
+}
+
+#next-arrow {
+    width 40px
+    height 40px
+    margin 0 auto 20px
+    margin 0 auto 2.0rem
+    border-radius 50%
+    transition-property all
+    transition-duration 0.5s
+    transition-timing-function 'ease-out'
+    bgArrowDown()
+    background-size 100%
+    animation breathe 2s ease-in-out infinite
+    cursor pointer
+
+    &:hover {
+        background-color rgba(255,255,255,0.2)
+        border-color #21b5ff
+        animation none
+    }
+}
+
+footer {
+    margin 6rem 0
+    color #a1a1a1
+    fontSize(1.5)
+}
