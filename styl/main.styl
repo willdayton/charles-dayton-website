@@ -13,34 +13,34 @@ section {
     margin-top 6rem
     fontSize(1.5)
     text-align left
-    
+
     .section-scroll-target {
         position relative
         top -85px
         top -8.5rem
         visibility hidden
     }
-    
+
     .section-title {
         text-transform uppercase
         font-size 1.8rem
         letter-spacing .2rem
         font-weight 600
     }
-    
+
     p {
         margin-bottom 1.0rem
     }
-    
+
     &.welcome {
-        
+
         .left {
-            
+
             h2,
             h5 {
                 text-align center
             }
-            
+
             .charles-dayton-image {
                 width 175px
                 height 175px
@@ -60,7 +60,7 @@ section {
             margin-top 6.0rem
             position relative
             text-align center
-            
+
             .amazon-image {
                 display block
                 width 150px
@@ -73,7 +73,7 @@ section {
                 background-position bottom center
                 cursor pointer
             }
-                        
+
             .welcome-image {
                 width 100%
                 min-height 370px
@@ -84,7 +84,7 @@ section {
             }
         }
     }
-    
+
     &.works {
         .work {
             margin-bottom 20px
@@ -106,10 +106,10 @@ section {
 .mysteries {
     margin-bottom 20px
     margin-bottom 2rem
-}    
+}
 
 .book-image {
-    
+
     display block
     width 100%
     height 300px
@@ -118,7 +118,7 @@ section {
     background-repeat no-repeat
     background-size contain
     background-position top center
-    
+
     &.come-hell-or-high-water {
         background-image url(../img/come-hell-or-high-water.png);
     }
@@ -131,17 +131,37 @@ section {
     &.time-passages {
         background-image url(../img/time-passages.png);
     }
+    &.there-but-for-fortune {
+        background-image url(../img/there-but-for-fortune.png);
+    }
+}
+
+.bio-image {
+    width 100%
+    height 300px
+    background-image url(../img/charles-dayton-hiking.jpg);
+    background-repeat no-repeat
+    background-size cover
+    margin-bottom 20px
+    margin-bottom 2.0rem
 }
 
 @media (min-width: 768px) {
     section {
         margin-top: 1.8rem;
-        
+
         &.welcome {
             .right {
                 display block
             }
         }
+    }
+    .bio-image {
+        float right
+        height 340px
+        width 70%
+        margin-left 25px
+        margin-top 7px
     }
 }
 
