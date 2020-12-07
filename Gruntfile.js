@@ -112,16 +112,16 @@ module.exports = function(grunt) {
 
 
         // Imagemin
-        imagemin: {
-            production: {
-                files: [{
-                    expand : true,
-                    cwd    : 'img/',
-                    src    : ['**/*.{png,jpg}'],
-                    dest   : 'production/img/'
-                }]
-            }
-        },
+        // imagemin: {
+        //     production: {
+        //         files: [{
+        //             expand : true,
+        //             cwd    : 'img/',
+        //             src    : ['**/*.{png,jpg}'],
+        //             dest   : 'production/img/'
+        //         }]
+        //     }
+        // },
         // End: Imagemin
 
 
@@ -177,7 +177,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-stylus');
     grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
+    // grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-copy');
@@ -222,7 +222,7 @@ module.exports = function(grunt) {
         'stylus',
         'cssmin',
         'uglify',
-        'imagemin:production',
+        // 'imagemin:production',
         'copy:production'
     ]);
     // End: Register tasks
